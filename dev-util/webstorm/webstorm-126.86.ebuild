@@ -29,8 +29,8 @@ src_install() {
 	fperms a+x /opt/${PN}/bin/fsnotifier64 || die "Chmod failed"
 	dosym /opt/${PN}/bin/webstorm.sh /usr/bin/${PN}
 	
-	mv "bin/webide.png" "bin/webide.png"
-	doicon "bin/webide.png"
+	mv "bin/webide.png" "bin/${PN}.png"
+	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PROGNAME}" "${PN}"
 }
 pkg_postinst() {
