@@ -1,11 +1,11 @@
 EAPI=4
 inherit eutils
-#PVERSION='5.0.4'
+PVERSION='5.0.1'
 EAP='-EAP'
-
+#http://download.jetbrains.com/ruby/RubyMine-5.0.1.tar.gz
 HOMEPAGE="http://www.jetbrains.com/ruby/"
 DESCRIPTION="he Most Intelligent Ruby and Rails IDE"
-SRC_URI="http://download.jetbrains.com/ruby/RubyMine-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="http://download.jetbrains.com/ruby/RubyMine-${PVERSION}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
