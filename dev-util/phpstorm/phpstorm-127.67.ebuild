@@ -1,11 +1,12 @@
 EAPI=4
 inherit eutils
 #PVERSION='5.0.4'
-EAP='-EAP'
+#EAP='-EAP'
+PREVIEW='6-Preview-'
 
 HOMEPAGE="http://www.jetbrains.com/phpstorm/"
 DESCRIPTION="PhpStorm"
-SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PREVIEW:-}${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
