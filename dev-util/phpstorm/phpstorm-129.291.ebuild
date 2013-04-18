@@ -1,6 +1,6 @@
 EAPI=4
 inherit eutils
-PVERSION='6.0'
+PVERSION='6.0.1'
 #EAP='-EAP'
 #PREVIEW='6-Preview-'
 HOMEPAGE="http://www.jetbrains.com/phpstorm/"
