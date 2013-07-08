@@ -1,6 +1,6 @@
 EAPI=4
 inherit eutils
-PVERSION='5.4.1'
+PVERSION='5.4.3'
 #EAP='-EAP'
 #http://download.jetbrains.com/ruby/RubyMine-5.4.1.tar.gz
 HOMEPAGE="http://www.jetbrains.com/ruby/"
