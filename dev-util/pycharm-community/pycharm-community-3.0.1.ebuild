@@ -4,7 +4,13 @@ PVERSION=${PV}
 DESCRIPTION="PyCharm Community Edition. I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
 SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}.tar.gz"
-KEYWORDS="~x86 ~amd64"
+
+if [[ x${PVERSION} != 'x' ]]; then
+	KEYWORDS="x86 amd64"
+else
+	KEYWORDS="~x86 ~amd64"
+fi
+
 DEPEND=">=virtual/jre-1.6"
 RDEPEND="${DEPEND}"
 RESTRICT="strip mirror"
