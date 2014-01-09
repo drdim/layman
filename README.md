@@ -1,8 +1,12 @@
 Copyright 2012-2014 Bogatkin Dmitry
+
 email: dr.dim.pro@gmail.com
+
 skype: dr.dim.pro
 
-Unoffetional repository for products JetBrains and EAP version.
+
+Unofficial repository for products JetBrains and EAP version.
+
 
 Add repository
 ==============
