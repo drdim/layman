@@ -1,11 +1,11 @@
 EAPI="4"
 inherit eutils
-#PVERSION=${PV}
-PVERSION="3.0.1"
-DESCRIPTION="PyCharm Professional build, non-free Stable 3.0.1 build, can buy license"
+PVERSION=${PV}
+#PVERSION="3.0.1"
+DESCRIPTION="PyCharm Professional build, non-free EAP 3.1 build, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
 SRC_URI="http://download.jetbrains.com/python/pycharm-professional-${PVERSION}.tar.gz"
-KEYWORDS="x86 amd64"
+KEYWORDS="~x86 ~amd64"
 DEPEND=">=virtual/jre-1.6"
 RDEPEND="${DEPEND}"
 RESTRICT="strip mirror"
