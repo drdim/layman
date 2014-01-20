@@ -15,7 +15,7 @@ Install layman:
 
     # emerge -av layman
 
-Add line to config /etc/layman.cfg:
+Add line to config /etc/layman.cfg (/etc/layman/layman.cfg):
 change
 
     overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
@@ -25,6 +25,10 @@ on
     overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
                 https://raw.github.com/drdim/layman/master/overlay.xml
 
+Synchronize:
+
+    # sudo layman -S
+
 Add my repository:
 
-    # layman -a drdim
+    # sudo layman -a drdim
