@@ -5,7 +5,7 @@ email: dr.dim.pro@gmail.com
 skype: dr.dim.pro
 
 
-Unofficial repository for products JetBrains and EAP version.
+Unofficial repository for products JetBrains and EAP version and my castom  ports.
 
 
 Add repository
@@ -23,7 +23,7 @@ change
 on
 
     overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
-                https://raw.github.com/drdim/layman/master/overlay.xml
+                https://raw.github.com/drdim/layman/extended/overlay.xml
 
 Synchronize:
 
