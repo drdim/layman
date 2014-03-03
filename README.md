@@ -31,4 +31,4 @@ Synchronize:
 
 Add my repository:
 
-    # sudo layman -a drdim
+    # sudo layman -a drdim-extended
