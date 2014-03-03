@@ -1,0 +1,23 @@
+--- CMake/FindMySQL.cmake	2014-02-21 14:20:19.992893782 +0100
++++ CMake/FindMySQL.cmake	2014-02-21 14:20:54.405893882 +0100
+@@ -67,19 +67,7 @@
+ 				 $ENV{ProgramFiles}/MySQL/*/lib/${libsuffixDist}
+ 				 $ENV{SystemDrive}/MySQL/*/lib/${libsuffixDist})
+ ELSE (WIN32)
+-	FIND_LIBRARY(MYSQL_LIB NAMES mysqlclient_r
+-				 PATHS
+-				 $ENV{MYSQL_DIR}/libmysql_r/.libs
+-				 $ENV{MYSQL_DIR}/lib
+-				 $ENV{MYSQL_DIR}/lib/mysql
+-				 /usr/lib/mysql
+-				 /usr/local/lib/mysql
+-				 /usr/local/mysql/lib
+-				 /usr/local/mysql/lib/mysql
+-				 /opt/local/mysql5/lib
+-				 /opt/local/lib/mysql5/mysql
+-				 /opt/mysql/mysql/lib/mysql
+-				 /opt/mysql/lib/mysql)
++	SET(MYSQL_LIB "/usr/lib64/mysql/libmysqlclient_r.so")
+ ENDIF (WIN32)
+ 
+ IF(MYSQL_LIB)

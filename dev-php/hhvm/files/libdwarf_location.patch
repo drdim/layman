@@ -1,0 +1,13 @@
+--- dwarf.h	2013-10-14 23:29:52.140475649 +0100
++++ hphp/runtime/vm/debug/dwarf.h	2013-10-14 23:30:19.643808982 +0100
+@@ -20,8 +20,8 @@
+ 
+ #include "hphp/runtime/base/types.h"
+ #include "hphp/runtime/vm/jit/translator.h"
+-#include <libdwarf.h>
+-#include <dwarf.h>
++#include <libdwarf/libdwarf.h>
++#include <libdwarf/dwarf.h>
+ #include <vector>
+ 
+ using namespace HPHP::Transl;

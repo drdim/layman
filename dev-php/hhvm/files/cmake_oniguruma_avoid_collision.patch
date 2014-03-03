@@ -1,0 +1,10 @@
+--- CMake/HPHPFindLibs.cmake    2013-10-29 14:59:59.991854515 +0100
++++ CMake/HPHPFindLibs.cmake    2013-10-29 15:00:27.025854641 +0100
+@@ -258,6 +258,7 @@
+ # oniguruma
+ find_package(ONIGURUMA REQUIRED)
+ include_directories(${ONIGURUMA_INCLUDE_DIRS})
++add_definitions("-DONIG_ESCAPE_UCHAR_COLLISION")
+ 
+ # LDAP
+ find_package(Ldap REQUIRED)
