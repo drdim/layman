@@ -1,8 +1,8 @@
 EAPI="4"
 inherit eutils
 
-#PVERSION='3.1.1'
-PVERSION_EAP='3.1.1'
+PVERSION='3.1.1'
+#PVERSION_EAP='3.1.1'
 #EAP=''
 
 DESCRIPTION="PyCharm Professional build, non-free EAP 3.1.1 RC build, can buy license"
