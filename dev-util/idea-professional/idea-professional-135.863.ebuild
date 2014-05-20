@@ -20,7 +20,7 @@ S=${WORKDIR}
 src_install() {
 	dodir /opt/${PN}
 
-	cd idea-IC*/
+	cd idea-IU*/
 	insinto /opt/${PN}
 	doins -r *
 

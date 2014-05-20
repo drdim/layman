@@ -21,7 +21,7 @@ src_install() {
 	dodir /opt/${PN}
 		
 	insinto /opt/${PN}
-	cd ${PN}-${PVERSION}
+	cd ${PN}-${PV}
 	doins -r *
 	fperms a+x /opt/${PN}/bin/pycharm.sh || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "fperms failed"
