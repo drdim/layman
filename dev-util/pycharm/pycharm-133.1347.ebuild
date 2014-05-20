@@ -1,10 +1,14 @@
 EAPI="4"
 inherit eutils
-#PVERSION=${PV}
-EAP=${PV}
-DESCRIPTION="PyCharm Community Edition. Preview EAP 3.1 version I't Free."
+
+PVERSION='3.1.3'
+#PVERSION_EAP='3.1.3'
+#EAP=''
+
+DESCRIPTION="PyCharm Professional build, non-free stable 3.1.3 build, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
-SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
+
+SRC_URI="http://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
@@ -17,23 +21,23 @@ RDEPEND="${DEPEND}"
 RESTRICT="strip mirror"
 SLOT="0"
 S=${WORKDIR}
+
 src_install() {	
 	dodir /opt/${PN}
 		
 	insinto /opt/${PN}
-	cd ${PN}-${PVERSION}
+	cd pycharm-${PVERSION:-${PVERSION_EAP}}
 	doins -r *
 	fperms a+x /opt/${PN}/bin/pycharm.sh || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier64 || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/inspect.sh || die "fperms failed"
 	dosym /opt/${PN}/bin/pycharm.sh /usr/bin/${PN}
-	
-	mv "bin/pycharm.png" "bin/${PN}.png"
-	doicon "bin/${PN}.png"
 
+	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PN}" "${PN}"
 }
+
 pkg_postinst() {
     elog "Run /usr/bin/${PN}"
 }

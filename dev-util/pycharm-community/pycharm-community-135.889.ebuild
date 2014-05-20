@@ -1,8 +1,8 @@
 EAPI="4"
 inherit eutils
-#PVERSION=${PV}
+#PVERSION="3.4"
 EAP=${PV}
-DESCRIPTION="PyCharm Community Edition. Preview EAP 3.1 version I't Free."
+DESCRIPTION="PyCharm Community Edition. Preview EAP 3.4 version I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
 SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
 
