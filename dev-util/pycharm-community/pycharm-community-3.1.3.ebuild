@@ -1,10 +1,9 @@
 EAPI="4"
 inherit eutils
-#PVERSION=${PV}
-EAP=${PV}
-DESCRIPTION="PyCharm Community Edition. RC 3.0.2 version I't Free."
+PVERSION=${PV}
+DESCRIPTION="PyCharm Community Edition. I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
-SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
+SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
