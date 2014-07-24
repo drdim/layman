@@ -15,20 +15,14 @@ Install layman:
 
     # emerge -av layman
 
-Add line to config /etc/layman.cfg (/etc/layman/layman.cfg):
-change
-
-    overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
-
-on
-
-    overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
-                https://raw.github.com/drdim/layman/master/overlay.xml
-
 Synchronize:
 
     # sudo layman -S
 
-Add my repository:
+Add repository:
 
     # sudo layman -a drdim
+
+Install ebuild:
+    
+    # sudo emerge pycharm-community
