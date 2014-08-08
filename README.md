@@ -15,6 +15,7 @@ Install layman:
 
     # emerge -av layman
 
+<<<<<<< HEAD
 Add line to config /etc/layman.cfg (/etc/layman/layman.cfg):
 change
 
@@ -25,10 +26,20 @@ on
     overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
                 https://raw.github.com/drdim/layman/extended/overlay.xml
 
+=======
+>>>>>>> master
 Synchronize:
 
     # sudo layman -S
 
-Add my repository:
+Add repository:
 
+<<<<<<< HEAD
     # sudo layman -a drdim-extended
+=======
+    # sudo layman -a drdim
+
+Install ebuild:
+    
+    # sudo emerge pycharm-community
+>>>>>>> master
