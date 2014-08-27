@@ -1,10 +1,10 @@
 EAPI=4
 inherit eutils
-PVERSION='7.1.3'
+PVERSION='7.1.4'
 #EAP='-EAP'
 
 HOMEPAGE="http://www.jetbrains.com/phpstorm/"
-DESCRIPTION="PhpStorm Last stable build 7.1.3 version"
+DESCRIPTION="PhpStorm Last stable 7.1.4 version"
 SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
