@@ -36,10 +36,7 @@ src_install() {
 	make_desktop_entry ${PN} "${PROGNAME}" "${PN}"
 }
 pkg_postinst() {
-    elog "Run /usr/bin/${PN}
-        !!! If phpstorm not load install your plugins, please reinstall liveEdit plugin from jetbrains plugin repository,
-	http://blog.jetbrains.com/phpstorm/2014/07/phpstorm-8-eap-138-940/#comment-96174
-    "
+    elog "Run /usr/bin/${PN}"
 }
 
 
