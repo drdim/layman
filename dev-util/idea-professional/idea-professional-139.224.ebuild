@@ -3,7 +3,7 @@ inherit eutils
 #EAP='-EAP'
 PVERSION='14'
 HOMEPAGE="http://www.jetbrains.com/idea/"
-DESCRIPTION="JetBrains idea Professional Edition EAP release 13.1.3, Non free used, use license"
+DESCRIPTION="JetBrains idea Professional Edition stable release 14, Non free used, use license"
 SRC_URI="http://download.jetbrains.com/idea/ideaIU-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
