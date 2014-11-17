@@ -1,10 +1,11 @@
 EAPI=4
 inherit eutils
-#EAP='-EAP'
-PVERSION='14'
-HOMEPAGE="http://www.jetbrains.com/idea/"
-DESCRIPTION="JetBrains idea Community Edition release 14, Free Used"
-SRC_URI="http://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
+#PVERSION='8.0.2'
+EAP='-EAP'
+
+HOMEPAGE="http://www.jetbrains.com/phpstorm/"
+DESCRIPTION="PhpStorm Last EAP build in 8.0.2 version"
+SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
@@ -12,7 +13,8 @@ else
 	KEYWORDS="~x86 ~amd64"
 fi
 
-PROGNAME="Idea"
+PROGNAME="PHP Storm"
+
 RESTRICT="strip mirror"
 DEPEND=">=virtual/jre-1.6"
 SLOT="0"
@@ -20,16 +22,16 @@ S=${WORKDIR}
 src_install() {
 	dodir /opt/${PN}
 
-	cd idea-IC*/
+	cd PhpStorm*/
 	insinto /opt/${PN}
 	doins -r *
 
-	fperms a+x /opt/${PN}/bin/idea.sh || die "Chmod failed"
+	fperms a+x /opt/${PN}/bin/phpstorm.sh || die "Chmod failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "Chmod failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier64 || die "Chmod failed"
-	dosym /opt/${PN}/bin/idea.sh /usr/bin/${PN}
+	dosym /opt/${PN}/bin/phpstorm.sh /usr/bin/${PN}
 	
-	mv "bin/idea.png" "bin/${PN}.png"
+	mv "bin/webide.png" "bin/${PN}.png"
 	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PROGNAME}" "${PN}"
 }
