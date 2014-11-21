@@ -1,11 +1,11 @@
 EAPI="4"
 inherit eutils
 
-#PVERSION='4'
-#PVERSION_EAP='4'
-EAP=''
+PVERSION='4.0'
+#PVERSION_EAP='4.0'
+#EAP=''
 
-DESCRIPTION="PyCharm Professional build, non-free EAP 4, can buy license"
+DESCRIPTION="PyCharm Professional build, non-free EAP 4.0, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
 
 SRC_URI="http://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
@@ -26,7 +26,7 @@ src_install() {
 	dodir /opt/${PN}
 		
 	insinto /opt/${PN}
-	cd pycharm-${PV}
+	cd pycharm-${PVERSION}
 	doins -r *
 	fperms a+x /opt/${PN}/bin/pycharm.sh || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "fperms failed"
