@@ -1,8 +1,9 @@
 EAPI="4"
 inherit eutils
-#PVERSION="4"
-EAP=${PV}
-DESCRIPTION="PyCharm Community Edition. Preview EAP 4 version I't Free."
+PVERSION="4.0"
+#PVERSION_EAP="4.0"
+#EAP=${PV}
+DESCRIPTION="PyCharm Community Edition. Preview EAP 4.0 version I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
 SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
 
@@ -21,7 +22,7 @@ src_install() {
 	dodir /opt/${PN}
 		
 	insinto /opt/${PN}
-	cd ${PN}-${PV}
+	cd ${PN}-${PVERSION:-${PVERSION_EAP}}
 	doins -r *
 	fperms a+x /opt/${PN}/bin/pycharm.sh || die "fperms failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "fperms failed"
