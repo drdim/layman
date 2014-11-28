@@ -5,7 +5,7 @@ inherit eutils
 #PVERSION_EAP='4'
 EAP=''
 
-DESCRIPTION="PyCharm Professional build RC , non-free preview build, can buy license"
+DESCRIPTION="PyCharm Professional build RC, non-free preview build, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
 
 SRC_URI="http://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
