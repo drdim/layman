@@ -1,11 +1,11 @@
 EAPI="4"
 inherit eutils
 
-PVERSION='4.0'
-#PVERSION_EAP='4.0'
-#EAP=''
+PVERSION='4.0.1'
+#PVERSION_EAP='4.0.1'
+EAP=''
 
-DESCRIPTION="PyCharm Professional build, non-free stable 4.0, can buy license"
+DESCRIPTION="PyCharm Professional build, non-free EAP 4.0.1, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
 
 SRC_URI="http://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
