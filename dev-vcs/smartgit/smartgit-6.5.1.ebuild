@@ -10,6 +10,7 @@ RESTRICT="strip mirror"
 DEPEND=">=virtual/jre-1.6"
 SLOT="0"
 S=${WORKDIR}
+KEYWORDS="x86 amd64"
 src_install() {
 	dodir /opt/${PN}
 
