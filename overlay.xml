@@ -2,13 +2,13 @@
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
   <repo quality="experimental" status="unofficial">
-    <name>drdim</name>
-    <description lang="en">JetBrains Product EAP and STABLE products in master branch for Gentoo and Calculate Linux</description>
-<homepage>https://github.com/drdim/layman.git</homepage>
+      <name>deadloko</name>
+    <description lang="en">JetBrains Product EAP and STABLE products in master branch for Gentoo and Calculate Linux and smartgit</description>
+<homepage>https://github.com/deadloko/layman.git</homepage>
     <owner type="person">
-      <email>drdim@drdim.ru</email>
-      <name>Bogatkin Dmitry</name>
+      <email>deadloko@gmail.com</email>
+      <name>Andrew Newman</name>
     </owner>
-<source type="git">https://github.com/drdim/layman.git</source>
+<source type="git">https://github.com/deadloko/layman.git</source>
   </repo>
 </repositories>
