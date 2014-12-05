@@ -5,7 +5,7 @@ email: dr.dim.pro@gmail.com
 skype: dr.dim.pro
 
 
-Unofficial repository for products JetBrains and EAP version.
+Unofficial repository for products JetBrains and EAP version. 
 
 
 Add repository
@@ -26,3 +26,5 @@ Add repository:
 Install ebuild:
     
     # sudo emerge pycharm-community
+
+This is the fork of repository made by drdim. If you want to use it check http://wiki.gentoo.org/wiki/Layman#Adding_custom_overlays
