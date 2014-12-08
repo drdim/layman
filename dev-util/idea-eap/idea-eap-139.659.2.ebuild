@@ -6,10 +6,10 @@ EAPI=5
 inherit eutils
 EAP='-EAP'
 LICENSE="Apache-2.0"
-#PVERSION='14.0.2'
+LASTVERSION='14.0.2'
 HOMEPAGE="http://www.jetbrains.com/idea/"
 DESCRIPTION="JetBrains idea Community Edition EAP release 14.0.2, Free Used"
-SRC_URI="http://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="http://download.jetbrains.com/idea/ideaIC-${LASTVERSION:-${PV}}.tar.gz"
 
 KEYWORDS="x86 amd64"
 
