@@ -1,3 +1,6 @@
+# Copyright 1999-2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
 EAPI=5
 inherit eutils
 #EAP='-EAP'
@@ -5,6 +8,7 @@ inherit eutils
 HOMEPAGE="http://www.syntevo.com/smartgit/"
 DESCRIPTION="SmartGit is a Git client with support for GitHub Pull Requests+Comments, SVN and Mercurial."
 SRC_URI="http://www.syntevo.com/download/smartgit/smartgit-generic-6_5_1.tar.gz"
+LICENSE="Apache-2.0"
 PROGNAME="Smartgit"
 RESTRICT="strip mirror"
 DEPEND=">=virtual/jre-1.6"
@@ -27,9 +31,6 @@ src_install() {
 	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PN}" "${PN}"
 }
-
 pkg_postinst() {
 	elog "${PN} installed, run it by icon or /usr/bin/${PN}"
 }
-
-
