@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		PyCharm is an Integrated Development Environment (IDE) used for programming in Python. It provides code analysis, graphical debugger, integrated unit tester, VCS/DVCS integration and supports web development with Django. PyCharm is developed by Czech company JetBrains.
+	</longdescription>
+</pkgmetadata>
