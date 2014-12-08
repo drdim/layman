@@ -1,6 +1,11 @@
-EAPI=4
+# Copyright 1999-2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+EAPI=5
 inherit eutils
 EAP='-EAP'
+LICENSE="Apache-2.0"
 #PVERSION='14.0.2'
 HOMEPAGE="http://www.jetbrains.com/idea/"
 DESCRIPTION="JetBrains idea Community Edition EAP release 14.0.2, Free Used"
@@ -28,13 +33,10 @@ src_install() {
 	fperms a+x /opt/${PN}/bin/fsnotifier || die "Chmod failed"
 	fperms a+x /opt/${PN}/bin/fsnotifier64 || die "Chmod failed"
 	dosym /opt/${PN}/bin/idea.sh /usr/bin/${PN}
-	
 	mv "bin/idea.png" "bin/${PN}.png"
 	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PROGNAME}" "${PN}"
 }
 pkg_postinst() {
-    elog "Run /usr/bin/${PN}"
+	elog "Run /usr/bin/${PN}"
 }
-
-
