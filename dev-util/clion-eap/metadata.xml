@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		C/C++ IDE. NEW. INTELLIGENT. CROSS-PLATFORM. With CLion you can develop applications in C and C++. In addition, it fully supports HTML (including HTML5), CSS, JavaScript, and XML: these languages are bundled in the IDE via plugins and are switched on for you by default. Support for other languages can also be added via plugins (go to PreferencesSettings | Appearance and Behavior | Plugins to find out more or set them up during the first IDE launch).
+	</longdescription>
+</pkgmetadata>
