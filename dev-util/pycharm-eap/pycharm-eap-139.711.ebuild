@@ -11,8 +11,8 @@ DESCRIPTION="PyCharm Community Edition RC. Preview Build 4 version. I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
 SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PV}.tar.gz"
 
-KEYWORDS="~x86 ~amd64"
-#KEYWORDS="x86 amd64"
+#KEYWORDS="~x86 ~amd64"
+KEYWORDS="x86 amd64"
 
 DEPEND=">=virtual/jre-1.6"
 RDEPEND="${DEPEND}"
