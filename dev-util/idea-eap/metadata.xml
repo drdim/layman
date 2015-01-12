@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-	<longdescription lang="en">
-		IntelliJ IDEA is a Java IDE by JetBrains. It is available as an Apache 2 Licensed community edition and a commercial edition.[1] In a report by Infoworld in 2010, IntelliJ received the highest test center score out of the 4 Top Java Programming Tools.
-	</longdescription>
-</pkgmetadata>
