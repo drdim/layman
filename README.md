@@ -1,28 +1,7 @@
-Copyright 2012-2014 Bogatkin Dmitry
+This is personal overlay made by me.
 
-email: dr.dim.pro@gmail.com
-
-skype: dr.dim.pro
-
-
-Unofficial repository for products JetBrains and EAP version.
-
-
-Add repository
-==============
-
-Install layman:
-
-    # emerge -av layman
-
-Synchronize:
-
-    # sudo layman -S
-
-Add repository:
-
-    # sudo layman -a drdim
-
-Install ebuild:
-    
-    # sudo emerge pycharm-community
+How to use:
+1) copy deadloko.xml to /etc/layman/overlays
+2) sync layman "layman -S"
+3) add repository "layman -a deadloko"
+4) merge needed package "emerge -av smartgit"
