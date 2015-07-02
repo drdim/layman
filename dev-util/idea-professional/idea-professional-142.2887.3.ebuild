@@ -1,10 +1,10 @@
 EAPI=4
 inherit eutils
-#EAP='-EAP'
-PVERSION='13.1.3'
+EAP='-EAP'
+#PVERSION='15'
 HOMEPAGE="http://www.jetbrains.com/idea/"
-DESCRIPTION="JetBrains idea Community Edition EAP release 13.1.3, Free Used"
-SRC_URI="http://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
+DESCRIPTION="JetBrains idea Professional Edition EAP 15, Non free used, use license"
+SRC_URI="http://download.jetbrains.com/idea/ideaIU-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
@@ -12,7 +12,7 @@ else
 	KEYWORDS="~x86 ~amd64"
 fi
 
-PROGNAME="Idea"
+PROGNAME="Idea Professional"
 RESTRICT="strip mirror"
 DEPEND=">=virtual/jre-1.6"
 SLOT="0"
@@ -20,7 +20,7 @@ S=${WORKDIR}
 src_install() {
 	dodir /opt/${PN}
 
-	cd idea-IC*/
+	cd idea-IU*/
 	insinto /opt/${PN}
 	doins -r *
 
