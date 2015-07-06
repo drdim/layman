@@ -1,10 +1,11 @@
 EAPI=4
 inherit eutils
-PVERSION='8.0.1'
-#EAP='-EAP'
+#PVERSION='8.0.3'
+EAP='-EAP'
+#EAP="-6-Preview"
 
 HOMEPAGE="http://www.jetbrains.com/phpstorm/"
-DESCRIPTION="PhpStorm 8.0.1 stable version"
+DESCRIPTION="PhpStorm"
 SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
@@ -19,10 +20,12 @@ RESTRICT="strip mirror"
 DEPEND=">=virtual/jre-1.6"
 SLOT="0"
 S=${WORKDIR}
+
 src_install() {
 	dodir /opt/${PN}
 
 	cd PhpStorm*/
+	sed -i 's/IS_EAP="true"/IS_EAP="false"/' bin/phpstorm.sh
 	insinto /opt/${PN}
 	doins -r *
 
@@ -35,6 +38,7 @@ src_install() {
 	doicon "bin/${PN}.png"
 	make_desktop_entry ${PN} "${PROGNAME}" "${PN}"
 }
+
 pkg_postinst() {
     elog "Run /usr/bin/${PN}"
 }
