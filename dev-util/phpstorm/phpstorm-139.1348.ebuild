@@ -6,7 +6,7 @@ PVERSION='8.0.3'
 
 HOMEPAGE="http://www.jetbrains.com/phpstorm/"
 DESCRIPTION="PhpStorm"
-SRC_URI="http://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/webide/PhpStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"

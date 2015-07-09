@@ -4,7 +4,7 @@ inherit eutils
 PVERSION='10.0.4'
 HOMEPAGE="http://www.jetbrains.com/webstorm/"
 DESCRIPTION="Most Intelligent WebStorm IDE for develop on js html css, 10.0.4 RELEASE version"
-SRC_URI="http://download.jetbrains.com/webstorm/WebStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/webstorm/WebStorm${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
