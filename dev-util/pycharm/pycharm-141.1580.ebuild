@@ -8,7 +8,7 @@ EAP=''
 DESCRIPTION="PyCharm Professional build, non-free RELEASE 4.5.2, can buy license"
 HOMEPAGE="www.jetbrains.com/pycharm/"
 
-SRC_URI="http://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/python/pycharm-professional${EAP}-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"

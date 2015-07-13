@@ -5,7 +5,7 @@ PVERSION="4.5.2"
 #EAP=${PV}
 DESCRIPTION="PyCharm Community Edition. 4.5.2 version I't Free."
 HOMEPAGE="www.jetbrains.com/pycharm/"
-SRC_URI="http://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
+SRC_URI="https://download.jetbrains.com/python/pycharm-community-${PVERSION}${EAP}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
