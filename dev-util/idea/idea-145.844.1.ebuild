@@ -1,9 +1,9 @@
 EAPI=4
 inherit eutils
 EAP='-EAP'
-#PVERSION='15'
+#PVERSION='2016.1.1'
 HOMEPAGE="http://www.jetbrains.com/idea/"
-DESCRIPTION="JetBrains idea Community Edition 15, Free Used"
+DESCRIPTION="JetBrains idea Community Edition EAP 2016.1.1, Free Used"
 SRC_URI="https://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
