@@ -4,7 +4,7 @@ EAP='-EAP'
 #PVERSION='15'
 HOMEPAGE="http://www.jetbrains.com/idea/"
 DESCRIPTION="JetBrains idea Community Edition 15, Free Used"
-SRC_URI="http://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"

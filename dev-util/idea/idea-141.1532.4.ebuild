@@ -4,7 +4,7 @@ inherit eutils
 PVERSION='14.1.4'
 HOMEPAGE="http://www.jetbrains.com/idea/"
 DESCRIPTION="JetBrains idea Community Edition EAP release 14.1.4, Free Used"
-SRC_URI="http://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/idea/ideaIC-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"

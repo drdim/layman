@@ -5,7 +5,7 @@ PVERSION='6.3.3'
 
 HOMEPAGE="http://www.jetbrains.com/ruby/"
 DESCRIPTION="The Most Intelligent Ruby and Rails IDE"
-SRC_URI="http://download.jetbrains.com/ruby/RubyMine-${PVERSION:-${PV}}.tar.gz"
+SRC_URI="https://download.jetbrains.com/ruby/RubyMine-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
 	KEYWORDS="x86 amd64"
