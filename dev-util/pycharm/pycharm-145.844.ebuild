@@ -16,7 +16,7 @@ else
 	KEYWORDS="~x86 ~amd64"
 fi
 
-DEPEND=">=virtual/jre-1.6"
+DEPEND="|| ( >=virtual/jre-1.8 >=virtual/jdk-1.8 )"
 RDEPEND="${DEPEND}"
 RESTRICT="strip mirror"
 SLOT="0"

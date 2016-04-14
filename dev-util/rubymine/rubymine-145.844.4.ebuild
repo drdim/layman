@@ -15,7 +15,7 @@ fi
 
 PROGNAME="RubyMine"
 RESTRICT="strip mirror"
-DEPEND=">=virtual/jre-1.6"
+DEPEND="|| ( >=virtual/jre-1.8 >=virtual/jdk-1.8 )"
 SLOT="0"
 S=${WORKDIR}
 src_install() {
